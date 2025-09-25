@@ -8,9 +8,10 @@ classDiagram
         +int id
         +string username
         +string email
-        +string password_hash
+        +string password
         +string nombre
-        +datetime fecha_creacion
+        +date created_at
+        +date updated_at
     }
 
     class Post {
@@ -18,32 +19,33 @@ classDiagram
         +int user_id
         +string titulo
         +text contenido
-        +datetime fecha_creacion
-        +datetime fecha_actualizacion
+        +date created_at
+        +date updated_at
     }
 
-    class Comment {
+    class Comentario {
         +int id
         +int post_id
         +int user_id
         +text contenido
-        +datetime fecha_creacion
-    }
+        +date created_at
+        +date updated_at
+     }
 
-    class Tag {
+    class Etiqueta {
         +int id
         +string nombre
     }
 
-    class PostTag {
+    class PostEtiqueta {
         +int post_id
-        +int tag_id
+        +int etiqueta_id
     }
 
     %% Relaciones
-    User "1" --> "many" Post : crea
-    User "1" --> "many" Comment : escribe
-    Post "1" --> "many" Comment : tiene
-    Post "many" --> "many" Tag : usa
-    PostTag .. Post
-    PostTag .. Tag
+    User "1" --> "many" Post : crear
+    User "1" --> "many" Comnentario : escribe
+    Post "1" --> "many" Comentario : tiene
+    Post "many" --> "many" Etiqueta : usa
+    PostEtiqueta .. Post
+    PostEtiqueta .. Etiqueta
