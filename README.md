@@ -44,7 +44,7 @@ classDiagram
 
     %% Relaciones
     User "1" --> "many" Post : crear
-    User "1" --> "many" Comnentario : escribe
+    User "1" --> "many" Comentario : escribe
     Post "1" --> "many" Comentario : tiene
     Post "many" --> "many" Etiqueta : usa
     PostEtiqueta .. Post
