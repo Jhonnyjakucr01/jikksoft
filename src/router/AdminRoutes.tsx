@@ -7,6 +7,9 @@ export const AdminRoutes = () => {
     <>
       <RoutesWithNotFound>
         <Route path="/" element={<Inicio />}></Route>
+        <Route path="inicio" element={<Inicio />}></Route>
+        <Route path="libros" element={<Inicio />}></Route>
+
 
       </RoutesWithNotFound>
     </>
