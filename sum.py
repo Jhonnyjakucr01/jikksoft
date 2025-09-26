@@ -14,4 +14,4 @@ function Sum(array $nums, int $target): array
 }
 
 $resultado = twoSum([20, 7, 11, 15,40,4], 51);
-print_r($resultado); // Debería mostrar [2, 4]
+print_r($resultado); 
