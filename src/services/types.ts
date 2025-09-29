@@ -1,17 +1,17 @@
-export interface Book {
+export interface Libros {
   id: number;
   titulo: string;
   autor: string;
-  disponible: boolean;
+  estado: string;
 }
 
-export interface Member {
+export interface Miembros {
   id: number;
   nombre: string;
   email: string;
 }
 
-export interface Library {
+export interface Biblioteca {
   id: number;
   nombre: string;
   direccion: string;
