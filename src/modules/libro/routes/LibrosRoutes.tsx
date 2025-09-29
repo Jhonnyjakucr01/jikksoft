@@ -5,7 +5,7 @@ export const LibrosRoutes = () => {
     return (
       <Routes>
         <Route path="/" element={<ListLibros />} />
-        <Route path="crear/" element={<FormLibros/>} />
+        <Route path="crear" element={<FormLibros/>} />
         
       </Routes>
   );

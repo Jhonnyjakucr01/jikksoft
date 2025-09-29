@@ -8,7 +8,7 @@ export interface Libros {
 export interface Miembros {
   id: number;
   nombre: string;
-  email: string;
+  correo: string;
 }
 
 export interface Biblioteca {
